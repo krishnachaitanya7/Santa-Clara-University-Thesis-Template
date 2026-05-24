@@ -1,0 +1,114 @@
+%!TEX root = ../Thesis.tex
+
+% Produce the title page
+
+% \addtolength{\topmargin}{0.0in}
+\newgeometry{left=20pt, right=20pt, top=0pt, bottom=0pt}
+\thispagestyle{empty}
+\noindent
+\setlength{\parindent}{0pt}
+
+
+\newlength{\advisorsignlinelength} 
+\setlength{\advisorsignlinelength}{3.8in}
+\newlength{\advisorsignlinethickness} 
+\setlength{\advisorsignlinethickness}{1.0pt}
+
+\begin{center}
+\begin{spacing}{1.0}
+  \includegraphics[width=0.2\textwidth]{FrontMatter/Figures/Santa Clara University.png}   
+  
+  \begin{large}
+    \textbf{\titlecap{\tschool}} \\
+    \textbf{\titlecap{\tdepartment}} \\~\\
+   \end{large}
+
+   \hfill Date: \tdateSubmitted \\~\\~\\
+
+I HEREBY RECOMMEND THAT THE THESIS PREPARED UNDER MY SUPERVISION BY \\~\\
+
+\begin{large}
+\textbf{\tname} \\~\\
+\end{large}
+
+ENTITLED\\~\\
+
+\begin{large}
+\textbf{\ttitle} \\~\\
+\end{large}
+
+BE ACCEPTED IN PARTIAL FULFILLMENT OF THE REQUIREMENTS FOR THE DEGREE \\~\\
+
+OF \\~\\
+
+\textbf{\MakeUppercase{\tdegree}} \textbf{IN} \textbf{\MakeUppercase{\tdepartment}} \\~\\
+\end{spacing}
+\end{center}
+
+\newcommand{\thesisadvisorsright}[1]{
+    \begin{FlushRight} 
+    \begin{singlespace} 
+    \rule{\advisorsignlinelength}{\advisorsignlinethickness}\\
+    \textbf{#1} \\
+    Date: \tdateSubmitted\     
+    \end{singlespace}
+    \end{FlushRight}    
+}
+\newcommand{\thesisadvisorsleft}[1]{
+    \begin{FlushLeft} 
+    \begin{singlespace}  
+   \rule{\advisorsignlinelength}{\advisorsignlinethickness}\\
+    \textbf{#1} \\
+    Date: \tdateSubmitted\     
+    \end{singlespace}
+    \end{FlushLeft}    
+}
+
+\newcommand{\clearpagemaketitle}{
+   \clearpage
+    \thispagestyle{empty}
+    \begin{center}
+        \includegraphics[width=.4\textwidth]{FrontMatter/Figures/Santa Clara University second logo.png} 
+    
+    \begin{large}
+        \textbf{\titlecap{\tschool}} \\
+        \textbf{\titlecap{\tdepartment}} \\~\\
+    \end{large}
+    \end{center}
+   
+}
+
+\begin{minipage}[t]{0.48\textwidth}
+    \thesisadvisorsleft{Thesis Advisor: Dr. Advisor Name}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \thesisadvisorsright{Thesis Reader: Advisor Name}
+\end{minipage}
+\vspace{0.5in}
+
+\begin{minipage}[t]{0.48\textwidth}
+    \thesisadvisorsleft{Thesis Reader: Dr. Advisor Name}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \thesisadvisorsright{Thesis Reader: Dr. Advisor Name}
+\end{minipage}
+\vspace{0.5in}
+
+\begin{minipage}[t]{0.48\textwidth}
+    \thesisadvisorsleft{Thesis Reader: Dr. Advisor Name}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \thesisadvisorsright{Thesis Reader: Dr. Advisor Name}
+\end{minipage}
+\vspace{0.5in}
+
+\begin{minipage}[t]{0.48\textwidth}
+    \thesisadvisorsleft{Dr. Dept. Chair\\ (Chair of the \titlecap{\tdepartment})}
+\end{minipage}
+
+\restoregeometry
+
+
