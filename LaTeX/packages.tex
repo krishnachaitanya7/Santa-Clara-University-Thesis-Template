@@ -15,14 +15,14 @@
 % As an alternative, see package ec - computer modern fonts in T1 and TS1 encodings
 %\usepackage{cm-super}          % if your LaTeX distro does not include cm-super
 %\usepackage{fix-cm}
-\usepackage{lmodern}
-\usepackage{mathptmx} % Make the font Times New Roman equivalent
+\usepackage{newtxtext} % Times New Roman text
+\usepackage{newtxmath} % Matching Times math
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}     % UTF-8 is a variable-width encoding (codepage) that can
                                 % represent every character in the Unicode character set.
                                 % It was designed for backward compatibility with ASCII
 
-\usepackage{color}              % colours in text
+\usepackage{xcolor}             % colours in text (modern replacement for color)
 \usepackage{enumitem}
 \usepackage{fancybox,fancyhdr,setspace}     % layout packages
 \usepackage{amsmath,amssymb,amsthm}         % Maths environments and symbols
@@ -43,7 +43,7 @@
 \usepackage{float}                          % allow [H] placement for figures
 \usepackage{ifthen}                         % much simpler IF THEN ELSE commands
 
-\usepackage{subfig}                         % fancy sub-figures
+\usepackage{subcaption}                     % modern sub-figure/sub-table support (replaces subfig)
 
 
 % TODO: work out how to make \autoref{fig:subfig} format as #.##(x) instead of #.##x
@@ -77,15 +77,15 @@
                                             % if you don't want to show any file/dir-tree structures
 
 % Graphics inclusion with hyperlinking in PDFs...
-\usepackage[pdftex]{graphicx}
+\usepackage{graphicx}
 % TODO: consider backref or pagebackref options for hyperref (?)
 \definecolor{urlcolour}{rgb}{0,0,0.6}
 
 % Define link colours for easy editing - change them below for final document...
-\usepackage[colorlinks=true, citecolor=red, linkcolor=blue, urlcolor=blue, bookmarks=true, bookmarksnumbered=true, pdftex, plainpages=false, pdfpagelabels]{hyperref}
+\usepackage[colorlinks=true, citecolor=red, linkcolor=blue, urlcolor=blue, bookmarks=true, bookmarksnumbered=true, plainpages=false, pdfpagelabels]{hyperref}
 % \usepackage{MyPackages/digsig} % TODO Add Signatures
 % !! MUST define all link colours as black for final document
-%\usepackage[colorlinks=true, citecolor=black, linkcolor=black, urlcolor=black, bookmarks=true, bookmarksnumbered=true, pdftex, plainpages=false, pdfpagelabels]{hyperref}
+%\usepackage[colorlinks=true, citecolor=black, linkcolor=black, urlcolor=black, bookmarks=true, bookmarksnumbered=true, plainpages=false, pdfpagelabels]{hyperref}
 
 \hypersetup{pdfauthor={\tname}, pdftitle={\tdoctype}, pdfsubject={\ttitle},
     pdfkeywords={\tkeywords}}
