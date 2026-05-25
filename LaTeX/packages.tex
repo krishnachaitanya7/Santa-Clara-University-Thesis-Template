@@ -25,7 +25,10 @@
 \usepackage{xcolor}             % colours in text (modern replacement for color)
 \usepackage{enumitem}
 \usepackage{fancybox,fancyhdr,setspace}     % layout packages
-\usepackage{amsmath,amssymb,amsthm}         % Maths environments and symbols
+\usepackage{amsmath}
+\let\Bbbk\relax                             % avoid clash with newtxmath's \Bbbk
+\usepackage{amssymb}
+\usepackage{amsthm}                         % Maths environments and symbols
 \usepackage{thmtools}                       % Theorem tools 'list of' package (for AMS Theorem)
 
 % Tables...
