@@ -1,4 +1,4 @@
-© by Krishna Chaitanya Kodur, Santa Clara University (https://sites.google.com/view/hmi2lab/home)
+© by Krishna Chaitanya Kodur (https://github.com/krishnachaitanya7)
 
 This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License. This file should be present in all the modifications done to the project.
 
